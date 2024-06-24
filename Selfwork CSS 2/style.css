@@ -32,7 +32,7 @@ nav div{
 
 
 .logoAulab{
-    height: 90px;
+    height: auto;
     width: 200px;
 }
 
@@ -126,4 +126,40 @@ section{
     background-color: rgb(161, 161, 59);
     color: black;
     cursor: pointer;
+}
+
+/* Media query cellulare */
+@media only screen and (max-width: 600px){
+
+    .navbar{
+        display: block;
+    }
+
+
+    .logoAulab{
+        padding-top: 20px;
+        padding-left: 25vw;
+    }
+
+
+    .listaLink{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+
+    .header{
+        max-height: 70vw;
+    }
+
+
+    section{
+        display: block;
+    }
+
+
+    .articoliEvidenziati, .articoliSuggeriti{
+        width: auto;
+        text-align: center;
+    }
 }
