@@ -16,6 +16,7 @@ h1, h2{
 
 body{
     margin: 0px;
+    /* position: relative; */
 }
 
 
@@ -150,6 +151,19 @@ aside{
 }
 
 
+.freccia_tornasu{
+    height: 40px;
+    width: auto;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+.freccia_tornasu:hover{
+    cursor: pointer;
+}
+
 
 /* Media query cellulare */
 @media only screen and (max-width: 600px){
@@ -191,4 +205,10 @@ aside{
         width: auto;
         text-align: center;
     }
+
+
+    .freccia_tornasu{
+        height: 30px;
+    }
+
 }
