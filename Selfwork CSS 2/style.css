@@ -71,6 +71,7 @@ nav li:hover{
 header > h1{
     font-size: 50px;
     margin-top: 0px;
+    margin-bottom: 3px;
 }
 
 
@@ -151,17 +152,44 @@ aside{
 }
 
 
+footer{
+    background-color: rgb(129, 129, 60);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding-right: 30px;
+}
+
+
+.listaFooter{
+    list-style: none;
+}
+
+
 .freccia_tornasu{
     height: 40px;
     width: auto;
+    animation-name: Icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    bottom: 10vh;
+    right: 30px;
 }
 
 
 .freccia_tornasu:hover{
     cursor: pointer;
+}
+
+
+@keyframes Icon{
+    0%{
+        transform: translateY(50px);
+    }100%{
+        transform : translate(0px);
+    }
 }
 
 
@@ -190,11 +218,24 @@ aside{
     }
 
 
+    .contenitoreArticoliEv_aside{
+        display: block;
+    }
+
+
     .sezioneArticoliEvidenziati{
         width: 100%;
     }
-    
 
+    aside{
+        display: block;
+        width: 100%;
+        margin-left: -10px;
+        margin-right: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    
 
     section{
         display: block;
@@ -202,9 +243,11 @@ aside{
 
 
     .articoliEvidenziati, .articoliSuggeriti{
+        display: block;
         width: auto;
         text-align: center;
     }
+
 
 
     .freccia_tornasu{
